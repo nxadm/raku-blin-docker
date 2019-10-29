@@ -4,4 +4,3 @@ services:
   - docker
 script:
   - docker build -t rakudo/blin:latest .
-  - docker run -ti -v /var/tmp/Blin:/mnt/Blin rakudo/blin:latest .
