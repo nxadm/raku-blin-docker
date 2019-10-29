@@ -1,2 +1,2 @@
 #!/bin/bash -e
-docker run -ti -v /var/tmp/blin:/Blin/output rakudo/blin $@
+docker run -ti -v /var/tmp/blin:/Blin rakudo/blin $@
