@@ -1,2 +1,3 @@
 #!/bin/bash -e
+docker pull rakudo/blin
 docker run -ti -v /var/tmp/blin:/Blin rakudo/blin $@
