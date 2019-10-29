@@ -7,3 +7,5 @@ $ ./dblin SomeModuleHere AnotherModuleHere
 $ ./dblin -old=2018.06 --new=2018.09 Foo::Regressed Foo::Regressed::Very Foo::Dependencies::B-on-A
 $ ./dblin
 ```
+
+Depending on the local docker configuration, `sudo` may be needed.
