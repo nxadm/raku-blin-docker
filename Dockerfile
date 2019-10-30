@@ -22,4 +22,4 @@ RUN mkdir -p /usr/share/man/man1 && apt-get update && apt-get install -y ${pkgs}
 RUN git clone https://github.com/perl6/Blin.git && cd Blin && \
 zef install --verbose --deps-only .
 
-ENTRYPOINT "cp -r /Blin /mnt && blin.p6"
+ENTRYPOINT cp -r /Blin /mnt && blin.p6
