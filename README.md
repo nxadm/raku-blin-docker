@@ -11,4 +11,12 @@ $ ./dblin
 ```
 
 Depending on the local docker configuration, `sudo` may be needed. The Blin
-directory will be copied to the volume '/var/tmp/Blin-volume'.
+directory will be copied to the volume '/var/tmp/Blin-volume'. Images will
+be automatically built from the `master` branch with the "latest" tag. If
+you want to test changes, use the `rc` branch. Images will be automatically
+created with the "rc" tag:
+
+```
+rakudo/blin:latest
+rakudo/blin:rc
+```
