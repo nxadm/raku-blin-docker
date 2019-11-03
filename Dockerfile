@@ -23,4 +23,5 @@ RUN echo "    StrictHostKeyChecking no" >> /etc/ssh/ssh_config
 RUN git clone https://github.com/perl6/Blin.git && cd Blin && \
 zef install --verbose --deps-only .
 
-ENTRYPOINT cp -r /Blin /mnt && cd /mnt/Blin && bin/blin.p6
+COPY entrypoint.sh /
+ENTRYPOINT [ "/entrypoint.sh" ]
