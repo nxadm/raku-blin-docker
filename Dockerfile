@@ -19,7 +19,7 @@ apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 379CE192D401AB61 &&
 echo "deb https://dl.bintray.com/nxadm/rakudo-pkg-debs buster main" > \
 /etc/apt/sources.list.d/rakudo-pkg.list
 RUN mkdir -p /usr/share/man/man1 && apt-get update && \
-apt-get install -y $(cat /pkg-dependencies)
+apt-get install -y $(cat /pkg-dependencies |grep -v '^#')
 RUN echo "    StrictHostKeyChecking no" >> /etc/ssh/ssh_config
 RUN git clone https://github.com/perl6/Blin.git && cd Blin && \
 zef install --verbose --deps-only .
