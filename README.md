@@ -20,3 +20,7 @@ created with the "rc" tag:
 rakudo/blin:latest
 rakudo/blin:rc
 ```
+
+Add new binary dependencies to the image by adding them to
+[pkg-dependencies](pkg-dependencies).
+
